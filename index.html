@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative    Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>ASAP - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <script>
+            var counter = 100;
+            var intervalID = null;
+            function startCounter() {
+                intervalID = setInterval(count, 1);
+            }
+            function count() {
+                if(counter === 42345)
+                    finish();
+                if (counter === 1001)
+                    counter = 5000;
+                if(counter === 7001)
+                    counter = 25000;
+                if (counter === 26001) 
+                    counter = 40000;
+                else {
+                    document.getElementById("dispC").innerHTML = counter;
+                }
+                counter++;
+            }
+            function finish() {
+                clearInterval(intervalID);
+                document.getElementById("dispC").innerHTML = counter+"<p> approx. </p>";
+            }
+        </script>
+	</head>
+	<body onload="startCounter()">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">ASAP Books</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="loginForm.html">Login</a></li>
+					<li><a href="registerForm.html">Register</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/book01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>A books a day keeps reality away.</p>
+							<h2>Books</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/book02.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>"Books are a uniquely portable magic"
+                                                                -Stephen King</p>
+							<h2>Books</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/book03.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>A book is a dream that you hold in your hands</p>
+							<h2>Books</h2>
+						</header>
+					</div>
+				</article>
+        </section>
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/pic03.jpg" alt="" width="400px" height="200px" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Book Renting</p>
+										<h2>VISION</h2>
+									</header>
+									<p>We promise to deliver the slightest aid to the world, by providing books to the needy or to those who can't afford the books at higher/original cost.</p>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/pic02.jpg" alt="" width="400px" height="200px" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Book Renting</p>
+										<h2>MISSION</h2>
+									</header>
+									<p>Many desire to learn and grow, but due to poverty or lack of resources they can't. We desire to provide them books with much lower cost than the market, so that they can purchase and learn. We do not say that this will help everyone to get educated, but atleast it will make a little change.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>These many children have no access to books, just because they can't afford original/new books from the shop.</p>
+                        <h2 id="dispC"></h2>
+					</header>
+                </div>
+			</section>
+
+		
+        <!-- Four -->
+        <section id="contactus" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">Book Renting</p>
+                        <h2>Contact Us</h2>
+					</header>
+                    <div class="grid-style align-center">
+                        <div>
+                            <i class="fa fa-phone-square fa-3x mb-3 sr-contact"></i>
+                            <p>+91 87642 80822</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i><br>
+                            <a href="mailto:bookrenting@gmail.com?Subject=Hello%20again" target="_top">bookrenting@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/Jaipur_Manipal" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/jaipur.manipal.edu/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://twitter.com/Jaipur_Manipal" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

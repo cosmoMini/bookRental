@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ASAP - Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function showDetails() {
+            var name = document.getElementById("name").value;
+            var mn = document.getElementById("mn").value;
+            var add = document.getElementById("add").value;
+
+            document.writeln("<center>");
+            document.writeln("<h1 style=\"color: red; font-size: 20px;\">Your entered details are....</h1><br><br>");
+            document.writeln("<p style=\"font-size: 15px;\"><b>Name:</b>"+name);
+            document.writeln("<p style=\"font-size: 15px;\"><b>Mobile Number:</b>"+mn);
+            document.writeln("<p style=\"font-size: 15px;\"><b>Address:</b>"+add);
+            document.writeln("</center>");
+            document.writeln("<p style=\"color: red; font-size: 15px;\">* Payment gateway comming soon....</p>");
+        }
+        </script>
+    </head>
+    <body onload="showDetails()">
+    </body>
+</html>
